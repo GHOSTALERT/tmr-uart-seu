@@ -1,0 +1,25 @@
+# simulation outputs
+*.vvp
+*.vcd
+*.shm/
+xcelium.d/
+xrun.*
+waves*
+# Cadence tool outputs
+*.log
+*.cmd
+*.rpt
+syn/Netlist/
+syn/Report/
+syn/fv/
+pnr/*.dat/
+pnr/0*_*
+pnr/timingReports/
+pnr/out/
+*.def
+*.spef
+*.sdf
+# PDK files (licensed, not redistributable)
+*.lib
+*.lef
+out/
