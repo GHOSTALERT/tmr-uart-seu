@@ -10,7 +10,7 @@ One Verilog description produces three versions through a `MODE` parameter:
 | 1 | TMR, output voting only | 4 / 5 (fails when two copies are hit at different times) |
 | 2 | TMR, voted state fed back to every copy each clock | **5 / 5** |
 
-Course project, BECE303L VLSI System Design, VIT (Fall 2026–27). Team: Aditya Manoj (24BVD0070), Arrnav Trisal (24BVD0064), Ananya Bisht (24BVD0035). Faculty: Aarthy M.
+Course project, BECE303L VLSI System Design, VIT (Fall 2026–27). Team: Aditya Manoj (24BVD0070), Arrnav Trisal (24BVD0064), Ananya Bisht (24BVD0035).
 
 Full write-up: [`docs/TMR_UART_Report.pdf`](docs/TMR_UART_Report.pdf) (IEEE format, also as `.docx`).
 
