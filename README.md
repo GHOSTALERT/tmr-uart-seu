@@ -7,6 +7,7 @@
 ![Node](https://img.shields.io/badge/node-GPDK090%2090%20nm-555)
 ![LEC](https://img.shields.io/badge/LEC-91%20%2F%2091%20equivalent-2e7d32)
 ![Course](https://img.shields.io/badge/VIT-BECE303L%20VLSI%20System%20Design-1e3a8a)
+![License](https://img.shields.io/badge/license-MIT-blue)
 
 <p align="center">
   <img src="docs/figures/fig_fi_outcome.png" alt="Frames received correctly under the same SEU schedule" width="640">
@@ -83,3 +84,7 @@ Main sources (full list in the report):
 3. R. E. Lyons and W. Vanderkulk, “The use of triple-modular redundancy to improve computer reliability,” *IBM J. Res. Develop.*, vol. 6, no. 2, pp. 200–209, 1962.
 4. R. T. Siecha et al., “Analysis of the SEU tolerance of an FPGA-based time-to-digital converter using emulation-based fault injection,” *Electronics*, vol. 14, no. 11, 2176, 2025. [link](https://www.mdpi.com/2079-9292/14/11/2176)
 5. M. H. Razmkhah, “A micro-FT-UART for safety-critical SoC-based applications,” *Proc. ARES*, 2009, pp. 316–321.
+
+## License
+
+Released under the [MIT License](LICENSE).
