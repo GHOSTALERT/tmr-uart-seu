@@ -1,0 +1,63 @@
+xrun(64): 24.09-s005: (c) Copyright 1995-2025 Cadence Design Systems, Inc.
+TOOL:	xrun(64)	24.09-s005: Started on Oct 29, 2026 at 12:15:43 IST
+xrun
+	-64bit
+	-access +rwc
+	-top tb_fi
+	-defparam tb_fi.MODE=2
+	tb_fi.v
+	../rtl/lfsr.v
+	../rtl/maj3.v
+	../rtl/tmr_uart_tx.v
+	../rtl/tx_replica.v
+	../rtl/uart_tmr_m0.v
+	../rtl/uart_tmr_m1.v
+	../rtl/uart_tmr_m2.v
+	../rtl/uart_tmr_top.v
+	../rtl/uart_tx_core.v
+	Elaborating the design hierarchy:
+		Caching library 'worklib' ....... Done
+	Top level design units:
+		tb_fi
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.maj3:v <0x666cd95c>
+			streams:   2, words:   471
+		worklib.maj3:v <0x373a4895>
+			streams:   2, words:   491
+		worklib.uart_tmr_top:v <0x719bbc3a>
+			streams:   5, words:  1608
+		worklib.tb_fi:v <0x4b7b3d10>
+			streams:  29, words: 24457
+		worklib.tmr_uart_tx:v <0x32c3c5f9>
+			streams:   9, words:  3039
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                 Instances  Unique
+		Modules:                14       7
+		Registers:              51      35
+		Scalar wires:           31       -
+		Vectored wires:         32       -
+		Always blocks:          12       8
+		Initial blocks:         15      15
+		Cont. assignments:      23      33
+		Pseudo assignments:      9       -
+		Process Clocks:          5       1
+		Simulation timescale:  1ps
+	Writing initial simulation snapshot: worklib.tb_fi:v
+Loading snapshot worklib.tb_fi:v .................... Done
+xcelium> source /home/cadence/install_RB_8.7/XCELIUM2409/tools/xcelium/files/xmsimrc
+xcelium> run
+=== Fault injection, MODE 2: TMR, voted state feedback ===
+ F0                                 no fault sent 01 received 01 OK
+ F1                     SEU in TX2 shift reg sent 02 received 02 OK
+ F2                           SEU in TX3 FSM sent 04 received 04 OK
+ F3          SEU TX1 + SEU TX2 (5 clk later) sent 08 received 08 OK
+ F4                      no fault (recovery) sent 11 received 11 OK
+ ------------------------------------------------------------
+ 5 frames: 5 OK, 0 corrupted. Copies ever flagged = 111
+Simulation complete via $finish(1) at time 19175 NS + 0
+./tb_fi.v:125         $finish;
+xcelium> exit
+TOOL:	xrun(64)	24.09-s005: Exiting on Oct 29, 2026 at 12:15:45 IST  (total: 00:00:02)

@@ -1,0 +1,2790 @@
+(DELAYFILE
+  (SDFVERSION  "OVI 3.0")
+  (DESIGN      "uart_tmr_m0")
+  (DATE        "Thu Oct 29 10:14:26 IST 2026")
+  (VENDOR      "Cadence, Inc.")
+  (PROGRAM     "Genus(TM) Synthesis Solution")
+  (VERSION     "21.14-s082_1")
+  (DIVIDER     .)
+  (VOLTAGE     ::0.9)
+  (PROCESS     "::1.0")
+  (TEMPERATURE ::125.0)
+  (TIMESCALE   1ps)
+  (CELL
+     (CELLTYPE "DFFQX1")
+     (INSTANCE u_top.u_tpg.q_reg\[0\])
+     (DELAY
+        (ABSOLUTE
+          (PORT CK (::0.0))
+          (PORT D (::0.0))
+          (IOPATH CK Q (::341) (::382))
+        )
+     )
+     (TIMINGCHECK
+        (SETUPHOLD (negedge D) (posedge CK) (::125) (::44))
+        (SETUPHOLD (posedge D) (posedge CK) (::193) (::-2))
+     )
+  )
+  (CELL
+     (CELLTYPE "MXI2XL")
+     (INSTANCE u_top.u_tpg.g136__2398)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (PORT S0 (::0.0))
+          (IOPATH A Y (::140) (::121))
+          (IOPATH B Y (::129) (::102))
+          (IOPATH S0 Y (::194) (::206))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "OAI21X1")
+     (INSTANCE u_top.u_tpg.g137__5107)
+     (DELAY
+        (ABSOLUTE
+          (PORT A0 (::0.0))
+          (PORT A1 (::0.0))
+          (PORT B0 (::0.0))
+          (IOPATH A0 Y (::88) (::91))
+          (IOPATH B0 Y (::57) (::66))
+          (IOPATH A1 Y (::86) (::67))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "NAND2XL")
+     (INSTANCE u_top.u_tpg.g138__6260)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (IOPATH A Y (::78) (::111))
+          (IOPATH B Y (::78) (::96))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "NOR4BX1")
+     (INSTANCE u_top.u_tpg.g139__4319)
+     (DELAY
+        (ABSOLUTE
+          (PORT AN (::0.0))
+          (PORT B (::0.0))
+          (PORT C (::0.0))
+          (PORT D (::0.0))
+          (IOPATH D Y (::183) (::73))
+          (IOPATH B Y (::222) (::86))
+          (IOPATH C Y (::204) (::80))
+          (IOPATH AN Y (::280) (::128))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "AOI21X1")
+     (INSTANCE u_top.u_tpg.g140__8428)
+     (DELAY
+        (ABSOLUTE
+          (PORT A0 (::0.0))
+          (PORT A1 (::0.0))
+          (PORT B0 (::0.0))
+          (IOPATH A0 Y (::116) (::98))
+          (IOPATH B0 Y (::99) (::62))
+          (IOPATH A1 Y (::109) (::96))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "DFFQX1")
+     (INSTANCE u_top.u_tpg.q_reg\[1\])
+     (DELAY
+        (ABSOLUTE
+          (PORT CK (::0.0))
+          (PORT D (::0.0))
+          (IOPATH CK Q (::341) (::382))
+        )
+     )
+     (TIMINGCHECK
+        (SETUPHOLD (negedge D) (posedge CK) (::96) (::27))
+        (SETUPHOLD (posedge D) (posedge CK) (::222) (::-34))
+     )
+  )
+  (CELL
+     (CELLTYPE "DFFQX1")
+     (INSTANCE u_top.u_tpg.q_reg\[7\])
+     (DELAY
+        (ABSOLUTE
+          (PORT CK (::0.0))
+          (PORT D (::0.0))
+          (IOPATH CK Q (::321) (::365))
+        )
+     )
+     (TIMINGCHECK
+        (SETUPHOLD (negedge D) (posedge CK) (::96) (::27))
+        (SETUPHOLD (posedge D) (posedge CK) (::222) (::-34))
+     )
+  )
+  (CELL
+     (CELLTYPE "DFFQX1")
+     (INSTANCE u_top.u_tpg.q_reg\[6\])
+     (DELAY
+        (ABSOLUTE
+          (PORT CK (::0.0))
+          (PORT D (::0.0))
+          (IOPATH CK Q (::336) (::377))
+        )
+     )
+     (TIMINGCHECK
+        (SETUPHOLD (negedge D) (posedge CK) (::96) (::27))
+        (SETUPHOLD (posedge D) (posedge CK) (::222) (::-34))
+     )
+  )
+  (CELL
+     (CELLTYPE "DFFQX1")
+     (INSTANCE u_top.u_tpg.q_reg\[2\])
+     (DELAY
+        (ABSOLUTE
+          (PORT CK (::0.0))
+          (PORT D (::0.0))
+          (IOPATH CK Q (::340) (::381))
+        )
+     )
+     (TIMINGCHECK
+        (SETUPHOLD (negedge D) (posedge CK) (::96) (::27))
+        (SETUPHOLD (posedge D) (posedge CK) (::222) (::-34))
+     )
+  )
+  (CELL
+     (CELLTYPE "NOR2XL")
+     (INSTANCE u_top.u_tpg.g145__5526)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (IOPATH A Y (::108) (::61))
+          (IOPATH B Y (::104) (::57))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "NOR4X1")
+     (INSTANCE u_top.u_tpg.g146__6783)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (PORT C (::0.0))
+          (PORT D (::0.0))
+          (IOPATH D Y (::128) (::52))
+          (IOPATH A Y (::174) (::69))
+          (IOPATH B Y (::171) (::68))
+          (IOPATH C Y (::151) (::61))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "DFFQX1")
+     (INSTANCE u_top.u_tpg.q_reg\[3\])
+     (DELAY
+        (ABSOLUTE
+          (PORT CK (::0.0))
+          (PORT D (::0.0))
+          (IOPATH CK Q (::349) (::389))
+        )
+     )
+     (TIMINGCHECK
+        (SETUPHOLD (negedge D) (posedge CK) (::96) (::27))
+        (SETUPHOLD (posedge D) (posedge CK) (::222) (::-34))
+     )
+  )
+  (CELL
+     (CELLTYPE "DFFQX1")
+     (INSTANCE u_top.u_tpg.q_reg\[5\])
+     (DELAY
+        (ABSOLUTE
+          (PORT CK (::0.0))
+          (PORT D (::0.0))
+          (IOPATH CK Q (::360) (::398))
+        )
+     )
+     (TIMINGCHECK
+        (SETUPHOLD (negedge D) (posedge CK) (::96) (::27))
+        (SETUPHOLD (posedge D) (posedge CK) (::222) (::-34))
+     )
+  )
+  (CELL
+     (CELLTYPE "DFFQX1")
+     (INSTANCE u_top.u_tpg.q_reg\[4\])
+     (DELAY
+        (ABSOLUTE
+          (PORT CK (::0.0))
+          (PORT D (::0.0))
+          (IOPATH CK Q (::350) (::389))
+        )
+     )
+     (TIMINGCHECK
+        (SETUPHOLD (negedge D) (posedge CK) (::96) (::27))
+        (SETUPHOLD (posedge D) (posedge CK) (::222) (::-34))
+     )
+  )
+  (CELL
+     (CELLTYPE "NOR2XL")
+     (INSTANCE u_top.u_tpg.g150__3680)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (IOPATH A Y (::72) (::35))
+          (IOPATH B Y (::97) (::52))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "NOR2XL")
+     (INSTANCE u_top.u_tpg.g151__1617)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (IOPATH A Y (::72) (::35))
+          (IOPATH B Y (::97) (::52))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "NOR2XL")
+     (INSTANCE u_top.u_tpg.g152__2802)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (IOPATH A Y (::72) (::35))
+          (IOPATH B Y (::97) (::52))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "NOR2XL")
+     (INSTANCE u_top.u_tpg.g153__1705)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (IOPATH A Y (::72) (::35))
+          (IOPATH B Y (::97) (::52))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "NOR2XL")
+     (INSTANCE u_top.u_tpg.g154__5122)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (IOPATH A Y (::72) (::35))
+          (IOPATH B Y (::97) (::52))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "NOR2XL")
+     (INSTANCE u_top.u_tpg.g155__8246)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (IOPATH A Y (::72) (::35))
+          (IOPATH B Y (::97) (::52))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "NOR2XL")
+     (INSTANCE u_top.u_tpg.g156__7098)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (IOPATH A Y (::72) (::35))
+          (IOPATH B Y (::97) (::52))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "MXI2XL")
+     (INSTANCE u_top.u_tpg.g157__6131)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (PORT S0 (::0.0))
+          (IOPATH A Y (::118) (::101))
+          (IOPATH B Y (::118) (::98))
+          (IOPATH S0 Y (::172) (::188))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "MXI2XL")
+     (INSTANCE u_top.u_tpg.g158__1881)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (PORT S0 (::0.0))
+          (IOPATH A Y (::118) (::102))
+          (IOPATH B Y (::118) (::98))
+          (IOPATH S0 Y (::172) (::188))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "MXI2XL")
+     (INSTANCE u_top.u_tpg.g159__5115)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (PORT S0 (::0.0))
+          (IOPATH A Y (::113) (::97))
+          (IOPATH B Y (::117) (::97))
+          (IOPATH S0 Y (::172) (::188))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "MXI2XL")
+     (INSTANCE u_top.u_tpg.g160__7482)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (PORT S0 (::0.0))
+          (IOPATH A Y (::120) (::103))
+          (IOPATH B Y (::118) (::98))
+          (IOPATH S0 Y (::172) (::188))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "MXI2XL")
+     (INSTANCE u_top.u_tpg.g161__4733)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (PORT S0 (::0.0))
+          (IOPATH A Y (::117) (::100))
+          (IOPATH B Y (::123) (::101))
+          (IOPATH S0 Y (::172) (::188))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "MXI2XL")
+     (INSTANCE u_top.u_tpg.g162__6161)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (PORT S0 (::0.0))
+          (IOPATH A Y (::123) (::104))
+          (IOPATH B Y (::120) (::99))
+          (IOPATH S0 Y (::172) (::188))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "MXI2XL")
+     (INSTANCE u_top.u_tpg.g163__9315)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (PORT S0 (::0.0))
+          (IOPATH A Y (::120) (::103))
+          (IOPATH B Y (::120) (::99))
+          (IOPATH S0 Y (::172) (::188))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "CLKXOR2X1")
+     (INSTANCE u_top.u_tpg.g2__9945)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (IOPATH A Y (::248) (::246))
+          (IOPATH B Y (::200) (::220))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "NAND2BX1")
+     (INSTANCE u_top.u_tpg.g185__2883)
+     (DELAY
+        (ABSOLUTE
+          (PORT AN (::0.0))
+          (PORT B (::0.0))
+          (IOPATH B Y (::61) (::70))
+          (IOPATH AN Y (::82) (::100))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "XNOR2X1")
+     (INSTANCE u_top.u_tpg.g186__2346)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (IOPATH A Y (::250) (::244))
+          (IOPATH B Y (::227) (::177))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "MX2X1")
+     (INSTANCE u_top.u_tx.g_simplex\.u_rep0.u_core.g1946__1666)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (PORT S0 (::0.0))
+          (IOPATH A Y (::146) (::156))
+          (IOPATH B Y (::142) (::158))
+          (IOPATH S0 Y (::225) (::196))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "INVXL")
+     (INSTANCE u_top.u_tx.g_simplex\.u_rep0.u_core.g1947)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (IOPATH A Y (::77) (::56))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "INVXL")
+     (INSTANCE u_top.u_tx.g_simplex\.u_rep0.u_core.g1948)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (IOPATH A Y (::77) (::56))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "OAI31X1")
+     (INSTANCE u_top.u_tx.g_simplex\.u_rep0.u_core.g1949__7410)
+     (DELAY
+        (ABSOLUTE
+          (PORT A0 (::0.0))
+          (PORT A1 (::0.0))
+          (PORT A2 (::0.0))
+          (PORT B0 (::0.0))
+          (IOPATH A0 Y (::130) (::81))
+          (IOPATH B0 Y (::55) (::73))
+          (IOPATH A1 Y (::122) (::73))
+          (IOPATH A2 Y (::157) (::77))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "NOR2XL")
+     (INSTANCE u_top.u_tx.g_simplex\.u_rep0.u_core.g1950__6417)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (IOPATH A Y (::89) (::54))
+          (IOPATH B Y (::98) (::54))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "OAI211X1")
+     (INSTANCE u_top.u_tx.g_simplex\.u_rep0.u_core.g1951__5477)
+     (DELAY
+        (ABSOLUTE
+          (PORT A0 (::0.0))
+          (PORT A1 (::0.0))
+          (PORT B0 (::0.0))
+          (PORT C0 (::0.0))
+          (IOPATH A0 Y (::145) (::126))
+          (IOPATH B0 Y (::73) (::110))
+          (IOPATH A1 Y (::103) (::104))
+          (IOPATH C0 Y (::72) (::108))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "AOI222XL")
+     (INSTANCE u_top.u_tx.g_simplex\.u_rep0.u_core.g1952__2398)
+     (DELAY
+        (ABSOLUTE
+          (PORT A0 (::0.0))
+          (PORT A1 (::0.0))
+          (PORT B0 (::0.0))
+          (PORT B1 (::0.0))
+          (PORT C0 (::0.0))
+          (PORT C1 (::0.0))
+          (IOPATH C1 Y (::148) (::82))
+          (IOPATH A0 Y (::220) (::125))
+          (IOPATH B0 Y (::221) (::126))
+          (IOPATH A1 Y (::259) (::170))
+          (IOPATH C0 Y (::188) (::122))
+          (IOPATH B1 Y (::206) (::129))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "AOI222XL")
+     (INSTANCE u_top.u_tx.g_simplex\.u_rep0.u_core.g1953__5107)
+     (DELAY
+        (ABSOLUTE
+          (PORT A0 (::0.0))
+          (PORT A1 (::0.0))
+          (PORT B0 (::0.0))
+          (PORT B1 (::0.0))
+          (PORT C0 (::0.0))
+          (PORT C1 (::0.0))
+          (IOPATH C1 Y (::151) (::87))
+          (IOPATH A0 Y (::217) (::122))
+          (IOPATH B0 Y (::221) (::126))
+          (IOPATH A1 Y (::259) (::170))
+          (IOPATH C0 Y (::188) (::122))
+          (IOPATH B1 Y (::206) (::129))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "INVXL")
+     (INSTANCE u_top.u_tx.g_simplex\.u_rep0.u_core.g1954)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (IOPATH A Y (::77) (::56))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "INVXL")
+     (INSTANCE u_top.u_tx.g_simplex\.u_rep0.u_core.g1955)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (IOPATH A Y (::77) (::56))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "INVXL")
+     (INSTANCE u_top.u_tx.g_simplex\.u_rep0.u_core.g1956)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (IOPATH A Y (::77) (::56))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "INVXL")
+     (INSTANCE u_top.u_tx.g_simplex\.u_rep0.u_core.g1957)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (IOPATH A Y (::77) (::56))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "INVXL")
+     (INSTANCE u_top.u_tx.g_simplex\.u_rep0.u_core.g1958)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (IOPATH A Y (::77) (::56))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "AOI222XL")
+     (INSTANCE u_top.u_tx.g_simplex\.u_rep0.u_core.g1959__6260)
+     (DELAY
+        (ABSOLUTE
+          (PORT A0 (::0.0))
+          (PORT A1 (::0.0))
+          (PORT B0 (::0.0))
+          (PORT B1 (::0.0))
+          (PORT C0 (::0.0))
+          (PORT C1 (::0.0))
+          (IOPATH C1 Y (::148) (::82))
+          (IOPATH A0 Y (::216) (::121))
+          (IOPATH B0 Y (::220) (::124))
+          (IOPATH A1 Y (::259) (::170))
+          (IOPATH C0 Y (::188) (::122))
+          (IOPATH B1 Y (::206) (::129))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "OAI31X1")
+     (INSTANCE u_top.u_tx.g_simplex\.u_rep0.u_core.g1960__4319)
+     (DELAY
+        (ABSOLUTE
+          (PORT A0 (::0.0))
+          (PORT A1 (::0.0))
+          (PORT A2 (::0.0))
+          (PORT B0 (::0.0))
+          (IOPATH A0 Y (::133) (::84))
+          (IOPATH B0 Y (::48) (::71))
+          (IOPATH A1 Y (::148) (::85))
+          (IOPATH A2 Y (::157) (::77))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "AOI222XL")
+     (INSTANCE u_top.u_tx.g_simplex\.u_rep0.u_core.g1961__8428)
+     (DELAY
+        (ABSOLUTE
+          (PORT A0 (::0.0))
+          (PORT A1 (::0.0))
+          (PORT B0 (::0.0))
+          (PORT B1 (::0.0))
+          (PORT C0 (::0.0))
+          (PORT C1 (::0.0))
+          (IOPATH C1 Y (::148) (::82))
+          (IOPATH A0 Y (::216) (::121))
+          (IOPATH B0 Y (::226) (::129))
+          (IOPATH A1 Y (::259) (::170))
+          (IOPATH C0 Y (::188) (::122))
+          (IOPATH B1 Y (::206) (::129))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "AOI222XL")
+     (INSTANCE u_top.u_tx.g_simplex\.u_rep0.u_core.g1962__5526)
+     (DELAY
+        (ABSOLUTE
+          (PORT A0 (::0.0))
+          (PORT A1 (::0.0))
+          (PORT B0 (::0.0))
+          (PORT B1 (::0.0))
+          (PORT C0 (::0.0))
+          (PORT C1 (::0.0))
+          (IOPATH C1 Y (::148) (::82))
+          (IOPATH A0 Y (::216) (::121))
+          (IOPATH B0 Y (::223) (::128))
+          (IOPATH A1 Y (::259) (::170))
+          (IOPATH C0 Y (::188) (::122))
+          (IOPATH B1 Y (::206) (::129))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "AOI222XL")
+     (INSTANCE u_top.u_tx.g_simplex\.u_rep0.u_core.g1963__6783)
+     (DELAY
+        (ABSOLUTE
+          (PORT A0 (::0.0))
+          (PORT A1 (::0.0))
+          (PORT B0 (::0.0))
+          (PORT B1 (::0.0))
+          (PORT C0 (::0.0))
+          (PORT C1 (::0.0))
+          (IOPATH C1 Y (::148) (::82))
+          (IOPATH A0 Y (::216) (::121))
+          (IOPATH B0 Y (::223) (::127))
+          (IOPATH A1 Y (::259) (::170))
+          (IOPATH C0 Y (::188) (::122))
+          (IOPATH B1 Y (::206) (::129))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "AOI222XL")
+     (INSTANCE u_top.u_tx.g_simplex\.u_rep0.u_core.g1964__3680)
+     (DELAY
+        (ABSOLUTE
+          (PORT A0 (::0.0))
+          (PORT A1 (::0.0))
+          (PORT B0 (::0.0))
+          (PORT B1 (::0.0))
+          (PORT C0 (::0.0))
+          (PORT C1 (::0.0))
+          (IOPATH C1 Y (::148) (::82))
+          (IOPATH A0 Y (::216) (::121))
+          (IOPATH B0 Y (::220) (::125))
+          (IOPATH A1 Y (::259) (::170))
+          (IOPATH C0 Y (::188) (::122))
+          (IOPATH B1 Y (::206) (::129))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "OAI2BB1X1")
+     (INSTANCE u_top.u_tx.g_simplex\.u_rep0.u_core.g1965__1617)
+     (DELAY
+        (ABSOLUTE
+          (PORT A0N (::0.0))
+          (PORT A1N (::0.0))
+          (PORT B0 (::0.0))
+          (IOPATH A1N Y (::152) (::138))
+          (IOPATH B0 Y (::61) (::72))
+          (IOPATH A0N Y (::143) (::133))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "NAND2XL")
+     (INSTANCE u_top.u_tx.g_simplex\.u_rep0.u_core.g1966__2802)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (IOPATH A Y (::71) (::88))
+          (IOPATH B Y (::76) (::94))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "OAI21X1")
+     (INSTANCE u_top.u_tx.g_simplex\.u_rep0.u_core.g1967__1705)
+     (DELAY
+        (ABSOLUTE
+          (PORT A0 (::0.0))
+          (PORT A1 (::0.0))
+          (PORT B0 (::0.0))
+          (IOPATH A0 Y (::87) (::74))
+          (IOPATH B0 Y (::52) (::68))
+          (IOPATH A1 Y (::87) (::76))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "AO22XL")
+     (INSTANCE u_top.u_tx.g_simplex\.u_rep0.u_core.g1968__5122)
+     (DELAY
+        (ABSOLUTE
+          (PORT A0 (::0.0))
+          (PORT A1 (::0.0))
+          (PORT B0 (::0.0))
+          (PORT B1 (::0.0))
+          (IOPATH A0 Y (::152) (::161))
+          (IOPATH B0 Y (::141) (::159))
+          (IOPATH A1 Y (::198) (::212))
+          (IOPATH B1 Y (::149) (::152))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "AOI21XL")
+     (INSTANCE u_top.u_tx.g_simplex\.u_rep0.u_core.g1969__8246)
+     (DELAY
+        (ABSOLUTE
+          (PORT A0 (::0.0))
+          (PORT A1 (::0.0))
+          (PORT B0 (::0.0))
+          (IOPATH A0 Y (::100) (::82))
+          (IOPATH B0 Y (::83) (::49))
+          (IOPATH A1 Y (::96) (::78))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "OAI21X1")
+     (INSTANCE u_top.u_tx.g_simplex\.u_rep0.u_core.g1970__7098)
+     (DELAY
+        (ABSOLUTE
+          (PORT A0 (::0.0))
+          (PORT A1 (::0.0))
+          (PORT B0 (::0.0))
+          (IOPATH A0 Y (::99) (::86))
+          (IOPATH B0 Y (::56) (::70))
+          (IOPATH A1 Y (::88) (::68))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "OAI22X1")
+     (INSTANCE u_top.u_tx.g_simplex\.u_rep0.u_core.g1971__6131)
+     (DELAY
+        (ABSOLUTE
+          (PORT A0 (::0.0))
+          (PORT A1 (::0.0))
+          (PORT B0 (::0.0))
+          (PORT B1 (::0.0))
+          (IOPATH A0 Y (::95) (::87))
+          (IOPATH B0 Y (::82) (::84))
+          (IOPATH A1 Y (::100) (::88))
+          (IOPATH B1 Y (::115) (::89))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "AOI31X1")
+     (INSTANCE u_top.u_tx.g_simplex\.u_rep0.u_core.g1972__1881)
+     (DELAY
+        (ABSOLUTE
+          (PORT A0 (::0.0))
+          (PORT A1 (::0.0))
+          (PORT A2 (::0.0))
+          (PORT B0 (::0.0))
+          (IOPATH A0 Y (::113) (::126))
+          (IOPATH B0 Y (::86) (::48))
+          (IOPATH A1 Y (::124) (::128))
+          (IOPATH A2 Y (::122) (::131))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "NOR2XL")
+     (INSTANCE u_top.u_tx.g_simplex\.u_rep0.u_core.g1973__5115)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (IOPATH A Y (::84) (::48))
+          (IOPATH B Y (::82) (::42))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "NAND2XL")
+     (INSTANCE u_top.u_tx.g_simplex\.u_rep0.u_core.g1974__7482)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (IOPATH A Y (::92) (::103))
+          (IOPATH B Y (::80) (::96))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "NOR2XL")
+     (INSTANCE u_top.u_tx.g_simplex\.u_rep0.u_core.g1975__4733)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (IOPATH A Y (::91) (::54))
+          (IOPATH B Y (::98) (::54))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "OAI2BB1X1")
+     (INSTANCE u_top.u_tx.g_simplex\.u_rep0.u_core.g1976__6161)
+     (DELAY
+        (ABSOLUTE
+          (PORT A0N (::0.0))
+          (PORT A1N (::0.0))
+          (PORT B0 (::0.0))
+          (IOPATH A1N Y (::148) (::150))
+          (IOPATH B0 Y (::79) (::85))
+          (IOPATH A0N Y (::164) (::200))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "AOI32X1")
+     (INSTANCE u_top.u_tx.g_simplex\.u_rep0.u_core.g1977__9315)
+     (DELAY
+        (ABSOLUTE
+          (PORT A0 (::0.0))
+          (PORT A1 (::0.0))
+          (PORT A2 (::0.0))
+          (PORT B0 (::0.0))
+          (PORT B1 (::0.0))
+          (IOPATH A0 Y (::128) (::147))
+          (IOPATH B0 Y (::124) (::88))
+          (IOPATH A1 Y (::140) (::150))
+          (IOPATH B1 Y (::100) (::75))
+          (IOPATH A2 Y (::118) (::148))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "OAI21XL")
+     (INSTANCE u_top.u_tx.g_simplex\.u_rep0.u_core.g1978__9945)
+     (DELAY
+        (ABSOLUTE
+          (PORT A0 (::0.0))
+          (PORT A1 (::0.0))
+          (PORT B0 (::0.0))
+          (IOPATH A0 Y (::103) (::87))
+          (IOPATH B0 Y (::68) (::90))
+          (IOPATH A1 Y (::103) (::81))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "OAI31X1")
+     (INSTANCE u_top.u_tx.g_simplex\.u_rep0.u_core.g1979__2883)
+     (DELAY
+        (ABSOLUTE
+          (PORT A0 (::0.0))
+          (PORT A1 (::0.0))
+          (PORT A2 (::0.0))
+          (PORT B0 (::0.0))
+          (IOPATH A0 Y (::146) (::100))
+          (IOPATH B0 Y (::61) (::96))
+          (IOPATH A1 Y (::138) (::80))
+          (IOPATH A2 Y (::169) (::78))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "OAI211XL")
+     (INSTANCE u_top.u_tx.g_simplex\.u_rep0.u_core.g1980__2346)
+     (DELAY
+        (ABSOLUTE
+          (PORT A0 (::0.0))
+          (PORT A1 (::0.0))
+          (PORT B0 (::0.0))
+          (PORT C0 (::0.0))
+          (IOPATH A0 Y (::135) (::134))
+          (IOPATH B0 Y (::96) (::128))
+          (IOPATH A1 Y (::152) (::146))
+          (IOPATH C0 Y (::73) (::117))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "INVX1")
+     (INSTANCE u_top.u_tx.g_simplex\.u_rep0.u_core.g1981)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (IOPATH A Y (::118) (::86))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "NAND3X1")
+     (INSTANCE u_top.u_tx.g_simplex\.u_rep0.u_core.g1982__1666)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (PORT C (::0.0))
+          (IOPATH A Y (::80) (::103))
+          (IOPATH B Y (::63) (::108))
+          (IOPATH C Y (::65) (::88))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "OAI222XL")
+     (INSTANCE u_top.u_tx.g_simplex\.u_rep0.u_core.g1983__7410)
+     (DELAY
+        (ABSOLUTE
+          (PORT A0 (::0.0))
+          (PORT A1 (::0.0))
+          (PORT B0 (::0.0))
+          (PORT B1 (::0.0))
+          (PORT C0 (::0.0))
+          (PORT C1 (::0.0))
+          (IOPATH C1 Y (::152) (::185))
+          (IOPATH A0 Y (::174) (::215))
+          (IOPATH B0 Y (::195) (::281))
+          (IOPATH A1 Y (::214) (::212))
+          (IOPATH C0 Y (::140) (::180))
+          (IOPATH B1 Y (::150) (::191))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "NOR2XL")
+     (INSTANCE u_top.u_tx.g_simplex\.u_rep0.u_core.g1984__6417)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (IOPATH A Y (::299) (::138))
+          (IOPATH B Y (::361) (::165))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "INVX1")
+     (INSTANCE u_top.u_tx.g_simplex\.u_rep0.u_core.g1985)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (IOPATH A Y (::77) (::47))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "AOI221X1")
+     (INSTANCE u_top.u_tx.g_simplex\.u_rep0.u_core.g1986__5477)
+     (DELAY
+        (ABSOLUTE
+          (PORT A0 (::0.0))
+          (PORT A1 (::0.0))
+          (PORT B0 (::0.0))
+          (PORT B1 (::0.0))
+          (PORT C0 (::0.0))
+          (IOPATH A0 Y (::192) (::119))
+          (IOPATH B0 Y (::182) (::113))
+          (IOPATH A1 Y (::196) (::121))
+          (IOPATH C0 Y (::148) (::66))
+          (IOPATH B1 Y (::170) (::98))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "AOI32X1")
+     (INSTANCE u_top.u_tx.g_simplex\.u_rep0.u_core.g1987__2398)
+     (DELAY
+        (ABSOLUTE
+          (PORT A0 (::0.0))
+          (PORT A1 (::0.0))
+          (PORT A2 (::0.0))
+          (PORT B0 (::0.0))
+          (PORT B1 (::0.0))
+          (IOPATH A0 Y (::150) (::160))
+          (IOPATH B0 Y (::126) (::91))
+          (IOPATH A1 Y (::116) (::141))
+          (IOPATH B1 Y (::128) (::114))
+          (IOPATH A2 Y (::143) (::215))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "AOI21X1")
+     (INSTANCE u_top.u_tx.g_simplex\.u_rep0.u_core.g1988__5107)
+     (DELAY
+        (ABSOLUTE
+          (PORT A0 (::0.0))
+          (PORT A1 (::0.0))
+          (PORT B0 (::0.0))
+          (IOPATH A0 Y (::125) (::107))
+          (IOPATH B0 Y (::101) (::63))
+          (IOPATH A1 Y (::117) (::104))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "OAI211X1")
+     (INSTANCE u_top.u_tx.g_simplex\.u_rep0.u_core.g1989__6260)
+     (DELAY
+        (ABSOLUTE
+          (PORT A0 (::0.0))
+          (PORT A1 (::0.0))
+          (PORT B0 (::0.0))
+          (PORT C0 (::0.0))
+          (IOPATH A0 Y (::228) (::266))
+          (IOPATH B0 Y (::126) (::257))
+          (IOPATH A1 Y (::258) (::304))
+          (IOPATH C0 Y (::157) (::324))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "INVXL")
+     (INSTANCE u_top.u_tx.g_simplex\.u_rep0.u_core.g1990)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (IOPATH A Y (::120) (::71))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "NOR2XL")
+     (INSTANCE u_top.u_tx.g_simplex\.u_rep0.u_core.g1991__4319)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (IOPATH A Y (::170) (::97))
+          (IOPATH B Y (::184) (::90))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "NAND2XL")
+     (INSTANCE u_top.u_tx.g_simplex\.u_rep0.u_core.g1992__8428)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (IOPATH A Y (::179) (::251))
+          (IOPATH B Y (::132) (::183))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "NAND2XL")
+     (INSTANCE u_top.u_tx.g_simplex\.u_rep0.u_core.g1993__5526)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (IOPATH A Y (::163) (::219))
+          (IOPATH B Y (::199) (::310))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "NOR2XL")
+     (INSTANCE u_top.u_tx.g_simplex\.u_rep0.u_core.g1994__6783)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (IOPATH A Y (::116) (::68))
+          (IOPATH B Y (::114) (::65))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "OR3XL")
+     (INSTANCE u_top.u_tx.g_simplex\.u_rep0.u_core.g1995__3680)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (PORT C (::0.0))
+          (IOPATH A Y (::124) (::206))
+          (IOPATH B Y (::156) (::225))
+          (IOPATH C Y (::122) (::219))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "AOI21XL")
+     (INSTANCE u_top.u_tx.g_simplex\.u_rep0.u_core.g1996__1617)
+     (DELAY
+        (ABSOLUTE
+          (PORT A0 (::0.0))
+          (PORT A1 (::0.0))
+          (PORT B0 (::0.0))
+          (IOPATH A0 Y (::105) (::86))
+          (IOPATH B0 Y (::86) (::52))
+          (IOPATH A1 Y (::117) (::93))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "NOR2XL")
+     (INSTANCE u_top.u_tx.g_simplex\.u_rep0.u_core.g1997__2802)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (IOPATH A Y (::82) (::46))
+          (IOPATH B Y (::98) (::54))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "NOR2XL")
+     (INSTANCE u_top.u_tx.g_simplex\.u_rep0.u_core.g1998__1705)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (IOPATH A Y (::88) (::53))
+          (IOPATH B Y (::109) (::52))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "NOR2XL")
+     (INSTANCE u_top.u_tx.g_simplex\.u_rep0.u_core.g1999__5122)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (IOPATH A Y (::87) (::52))
+          (IOPATH B Y (::98) (::54))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "NAND2BX1")
+     (INSTANCE u_top.u_tx.g_simplex\.u_rep0.u_core.g2000__8246)
+     (DELAY
+        (ABSOLUTE
+          (PORT AN (::0.0))
+          (PORT B (::0.0))
+          (IOPATH B Y (::60) (::75))
+          (IOPATH AN Y (::119) (::164))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "CLKINVX1")
+     (INSTANCE u_top.u_tx.g_simplex\.u_rep0.u_core.g2001)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (IOPATH A Y (::114) (::113))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "AOI21XL")
+     (INSTANCE u_top.u_tx.g_simplex\.u_rep0.u_core.g2002__7098)
+     (DELAY
+        (ABSOLUTE
+          (PORT A0 (::0.0))
+          (PORT A1 (::0.0))
+          (PORT B0 (::0.0))
+          (IOPATH A0 Y (::121) (::100))
+          (IOPATH B0 Y (::141) (::77))
+          (IOPATH A1 Y (::113) (::99))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "OAI21X1")
+     (INSTANCE u_top.u_tx.g_simplex\.u_rep0.u_core.g2003__6131)
+     (DELAY
+        (ABSOLUTE
+          (PORT A0 (::0.0))
+          (PORT A1 (::0.0))
+          (PORT B0 (::0.0))
+          (IOPATH A0 Y (::135) (::117))
+          (IOPATH B0 Y (::77) (::95))
+          (IOPATH A1 Y (::108) (::88))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "AOI21X1")
+     (INSTANCE u_top.u_tx.g_simplex\.u_rep0.u_core.g2004__1881)
+     (DELAY
+        (ABSOLUTE
+          (PORT A0 (::0.0))
+          (PORT A1 (::0.0))
+          (PORT B0 (::0.0))
+          (IOPATH A0 Y (::124) (::107))
+          (IOPATH B0 Y (::102) (::64))
+          (IOPATH A1 Y (::119) (::106))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "NOR2XL")
+     (INSTANCE u_top.u_tx.g_simplex\.u_rep0.u_core.g2005__5115)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (IOPATH A Y (::378) (::166))
+          (IOPATH B Y (::406) (::184))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "NAND2BX1")
+     (INSTANCE u_top.u_tx.g_simplex\.u_rep0.u_core.g2006__7482)
+     (DELAY
+        (ABSOLUTE
+          (PORT AN (::0.0))
+          (PORT B (::0.0))
+          (IOPATH B Y (::65) (::66))
+          (IOPATH AN Y (::97) (::113))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "NAND2XL")
+     (INSTANCE u_top.u_tx.g_simplex\.u_rep0.u_core.g2007__4733)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (IOPATH A Y (::99) (::106))
+          (IOPATH B Y (::70) (::88))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "NAND2XL")
+     (INSTANCE u_top.u_tx.g_simplex\.u_rep0.u_core.g2008__6161)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (IOPATH A Y (::110) (::132))
+          (IOPATH B Y (::110) (::122))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "NOR2XL")
+     (INSTANCE u_top.u_tx.g_simplex\.u_rep0.u_core.g2009__9315)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (IOPATH A Y (::116) (::70))
+          (IOPATH B Y (::116) (::64))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "OAI21XL")
+     (INSTANCE u_top.u_tx.g_simplex\.u_rep0.u_core.g2010__9945)
+     (DELAY
+        (ABSOLUTE
+          (PORT A0 (::0.0))
+          (PORT A1 (::0.0))
+          (PORT B0 (::0.0))
+          (IOPATH A0 Y (::116) (::90))
+          (IOPATH B0 Y (::84) (::86))
+          (IOPATH A1 Y (::103) (::80))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "AOI21X1")
+     (INSTANCE u_top.u_tx.g_simplex\.u_rep0.u_core.g2011__2883)
+     (DELAY
+        (ABSOLUTE
+          (PORT A0 (::0.0))
+          (PORT A1 (::0.0))
+          (PORT B0 (::0.0))
+          (IOPATH A0 Y (::149) (::127))
+          (IOPATH B0 Y (::125) (::68))
+          (IOPATH A1 Y (::147) (::119))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "INVXL")
+     (INSTANCE u_top.u_tx.g_simplex\.u_rep0.u_core.g2012)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (IOPATH A Y (::67) (::45))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "CLKINVX1")
+     (INSTANCE u_top.u_tx.g_simplex\.u_rep0.u_core.g2013)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (IOPATH A Y (::176) (::125))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "NAND2XL")
+     (INSTANCE u_top.u_tx.g_simplex\.u_rep0.u_core.g2014__2346)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (IOPATH A Y (::90) (::106))
+          (IOPATH B Y (::107) (::151))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "AND2X1")
+     (INSTANCE u_top.u_tx.g_simplex\.u_rep0.u_core.g2015__1666)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (IOPATH A Y (::161) (::146))
+          (IOPATH B Y (::156) (::130))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "NAND2BX1")
+     (INSTANCE u_top.u_tx.g_simplex\.u_rep0.u_core.g2016__7410)
+     (DELAY
+        (ABSOLUTE
+          (PORT AN (::0.0))
+          (PORT B (::0.0))
+          (IOPATH B Y (::92) (::124))
+          (IOPATH AN Y (::153) (::215))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "NAND3X1")
+     (INSTANCE u_top.u_tx.g_simplex\.u_rep0.u_core.g2017__6417)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (PORT C (::0.0))
+          (IOPATH A Y (::149) (::190))
+          (IOPATH B Y (::93) (::160))
+          (IOPATH C Y (::112) (::212))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "XNOR2XL")
+     (INSTANCE u_top.u_tx.g_simplex\.u_rep0.u_core.g2018__5477)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (IOPATH A Y (::188) (::184))
+          (IOPATH B Y (::182) (::134))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "AOI21X1")
+     (INSTANCE u_top.u_tx.g_simplex\.u_rep0.u_core.g2019__2398)
+     (DELAY
+        (ABSOLUTE
+          (PORT A0 (::0.0))
+          (PORT A1 (::0.0))
+          (PORT B0 (::0.0))
+          (IOPATH A0 Y (::135) (::117))
+          (IOPATH B0 Y (::107) (::65))
+          (IOPATH A1 Y (::125) (::118))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "OAI21X1")
+     (INSTANCE u_top.u_tx.g_simplex\.u_rep0.u_core.g2020__5107)
+     (DELAY
+        (ABSOLUTE
+          (PORT A0 (::0.0))
+          (PORT A1 (::0.0))
+          (PORT B0 (::0.0))
+          (IOPATH A0 Y (::131) (::114))
+          (IOPATH B0 Y (::76) (::93))
+          (IOPATH A1 Y (::126) (::102))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "XNOR2X1")
+     (INSTANCE u_top.u_tx.g_simplex\.u_rep0.u_core.g2021__6260)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (IOPATH A Y (::241) (::237))
+          (IOPATH B Y (::231) (::181))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "INVXL")
+     (INSTANCE u_top.u_tx.g_simplex\.u_rep0.u_core.g2022)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (IOPATH A Y (::87) (::72))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "NOR2XL")
+     (INSTANCE u_top.u_tx.g_simplex\.u_rep0.u_core.g2023__4319)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (IOPATH A Y (::126) (::78))
+          (IOPATH B Y (::123) (::71))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "NAND2XL")
+     (INSTANCE u_top.u_tx.g_simplex\.u_rep0.u_core.g2024__8428)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (IOPATH A Y (::56) (::67))
+          (IOPATH B Y (::59) (::71))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "NAND2XL")
+     (INSTANCE u_top.u_tx.g_simplex\.u_rep0.u_core.g2025__5526)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (IOPATH A Y (::95) (::105))
+          (IOPATH B Y (::89) (::107))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "NOR2XL")
+     (INSTANCE u_top.u_tx.g_simplex\.u_rep0.u_core.g2026__6783)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (IOPATH A Y (::146) (::85))
+          (IOPATH B Y (::201) (::107))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "NAND2XL")
+     (INSTANCE u_top.u_tx.g_simplex\.u_rep0.u_core.g2027__3680)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (IOPATH A Y (::116) (::159))
+          (IOPATH B Y (::120) (::163))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "INVXL")
+     (INSTANCE u_top.u_tx.g_simplex\.u_rep0.u_core.g2028)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (IOPATH A Y (::86) (::60))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "CLKINVX1")
+     (INSTANCE u_top.u_tx.g_simplex\.u_rep0.u_core.g2029)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (IOPATH A Y (::87) (::81))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "NAND2XL")
+     (INSTANCE u_top.u_tx.g_simplex\.u_rep0.u_core.g2030__1617)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (IOPATH A Y (::97) (::111))
+          (IOPATH B Y (::84) (::104))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "NAND2XL")
+     (INSTANCE u_top.u_tx.g_simplex\.u_rep0.u_core.g2031__2802)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (IOPATH A Y (::107) (::132))
+          (IOPATH B Y (::95) (::124))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "NAND2XL")
+     (INSTANCE u_top.u_tx.g_simplex\.u_rep0.u_core.g2032__1705)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (IOPATH A Y (::106) (::148))
+          (IOPATH B Y (::111) (::152))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "NAND2XL")
+     (INSTANCE u_top.u_tx.g_simplex\.u_rep0.u_core.g2033__5122)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (IOPATH A Y (::143) (::190))
+          (IOPATH B Y (::135) (::183))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "NOR2XL")
+     (INSTANCE u_top.u_tx.g_simplex\.u_rep0.u_core.g2034__8246)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (IOPATH A Y (::320) (::167))
+          (IOPATH B Y (::327) (::174))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "INVX1")
+     (INSTANCE u_top.u_tx.g_simplex\.u_rep0.u_core.g2035)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (IOPATH A Y (::88) (::75))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "INVX1")
+     (INSTANCE u_top.u_tx.g_simplex\.u_rep0.u_core.g2036)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (IOPATH A Y (::89) (::73))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "INVX1")
+     (INSTANCE u_top.u_tx.g_simplex\.u_rep0.u_core.g2037)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (IOPATH A Y (::71) (::61))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "CLKINVX1")
+     (INSTANCE u_top.u_tx.g_simplex\.u_rep0.u_core.g2038)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (IOPATH A Y (::112) (::99))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "DFFQX1")
+     (INSTANCE u_top.u_tx.g_simplex\.u_rep0.st_q_reg\[0\])
+     (DELAY
+        (ABSOLUTE
+          (PORT CK (::0.0))
+          (PORT D (::0.0))
+          (IOPATH CK Q (::296) (::344))
+        )
+     )
+     (TIMINGCHECK
+        (SETUPHOLD (negedge D) (posedge CK) (::77) (::16))
+        (SETUPHOLD (posedge D) (posedge CK) (::169) (::24))
+     )
+  )
+  (CELL
+     (CELLTYPE "DFFQX1")
+     (INSTANCE u_top.u_tx.g_simplex\.u_rep0.st_q_reg\[1\])
+     (DELAY
+        (ABSOLUTE
+          (PORT CK (::0.0))
+          (PORT D (::0.0))
+          (IOPATH CK Q (::256) (::309))
+        )
+     )
+     (TIMINGCHECK
+        (SETUPHOLD (negedge D) (posedge CK) (::81) (::52))
+        (SETUPHOLD (posedge D) (posedge CK) (::184) (::8))
+     )
+  )
+  (CELL
+     (CELLTYPE "DFFQX1")
+     (INSTANCE u_top.u_tx.g_simplex\.u_rep0.st_q_reg\[10\])
+     (DELAY
+        (ABSOLUTE
+          (PORT CK (::0.0))
+          (PORT D (::0.0))
+          (IOPATH CK Q (::292) (::340))
+        )
+     )
+     (TIMINGCHECK
+        (SETUPHOLD (negedge D) (posedge CK) (::80) (::48))
+        (SETUPHOLD (posedge D) (posedge CK) (::186) (::5))
+     )
+  )
+  (CELL
+     (CELLTYPE "DFFQX1")
+     (INSTANCE u_top.u_tx.g_simplex\.u_rep0.st_q_reg\[11\])
+     (DELAY
+        (ABSOLUTE
+          (PORT CK (::0.0))
+          (PORT D (::0.0))
+          (IOPATH CK Q (::274) (::325))
+        )
+     )
+     (TIMINGCHECK
+        (SETUPHOLD (negedge D) (posedge CK) (::81) (::50))
+        (SETUPHOLD (posedge D) (posedge CK) (::187) (::4))
+     )
+  )
+  (CELL
+     (CELLTYPE "DFFQX1")
+     (INSTANCE u_top.u_tx.g_simplex\.u_rep0.st_q_reg\[12\])
+     (DELAY
+        (ABSOLUTE
+          (PORT CK (::0.0))
+          (PORT D (::0.0))
+          (IOPATH CK Q (::289) (::337))
+        )
+     )
+     (TIMINGCHECK
+        (SETUPHOLD (negedge D) (posedge CK) (::81) (::50))
+        (SETUPHOLD (posedge D) (posedge CK) (::187) (::4))
+     )
+  )
+  (CELL
+     (CELLTYPE "DFFQX1")
+     (INSTANCE u_top.u_tx.g_simplex\.u_rep0.st_q_reg\[13\])
+     (DELAY
+        (ABSOLUTE
+          (PORT CK (::0.0))
+          (PORT D (::0.0))
+          (IOPATH CK Q (::280) (::330))
+        )
+     )
+     (TIMINGCHECK
+        (SETUPHOLD (negedge D) (posedge CK) (::81) (::51))
+        (SETUPHOLD (posedge D) (posedge CK) (::184) (::8))
+     )
+  )
+  (CELL
+     (CELLTYPE "DFFQX1")
+     (INSTANCE u_top.u_tx.g_simplex\.u_rep0.st_q_reg\[14\])
+     (DELAY
+        (ABSOLUTE
+          (PORT CK (::0.0))
+          (PORT D (::0.0))
+          (IOPATH CK Q (::256) (::309))
+        )
+     )
+     (TIMINGCHECK
+        (SETUPHOLD (negedge D) (posedge CK) (::81) (::51))
+        (SETUPHOLD (posedge D) (posedge CK) (::184) (::8))
+     )
+  )
+  (CELL
+     (CELLTYPE "DFFQX1")
+     (INSTANCE u_top.u_tx.g_simplex\.u_rep0.st_q_reg\[15\])
+     (DELAY
+        (ABSOLUTE
+          (PORT CK (::0.0))
+          (PORT D (::0.0))
+          (IOPATH CK Q (::285) (::335))
+        )
+     )
+     (TIMINGCHECK
+        (SETUPHOLD (negedge D) (posedge CK) (::81) (::51))
+        (SETUPHOLD (posedge D) (posedge CK) (::184) (::8))
+     )
+  )
+  (CELL
+     (CELLTYPE "DFFQX1")
+     (INSTANCE u_top.u_tx.g_simplex\.u_rep0.st_q_reg\[16\])
+     (DELAY
+        (ABSOLUTE
+          (PORT CK (::0.0))
+          (PORT D (::0.0))
+          (IOPATH CK Q (::267) (::318))
+        )
+     )
+     (TIMINGCHECK
+        (SETUPHOLD (negedge D) (posedge CK) (::81) (::51))
+        (SETUPHOLD (posedge D) (posedge CK) (::184) (::8))
+     )
+  )
+  (CELL
+     (CELLTYPE "DFFQX1")
+     (INSTANCE u_top.u_tx.g_simplex\.u_rep0.st_q_reg\[17\])
+     (DELAY
+        (ABSOLUTE
+          (PORT CK (::0.0))
+          (PORT D (::0.0))
+          (IOPATH CK Q (::363) (::401))
+        )
+     )
+     (TIMINGCHECK
+        (SETUPHOLD (negedge D) (posedge CK) (::80) (::48))
+        (SETUPHOLD (posedge D) (posedge CK) (::188) (::4))
+     )
+  )
+  (CELL
+     (CELLTYPE "DFFQX1")
+     (INSTANCE u_top.u_tx.g_simplex\.u_rep0.st_q_reg\[18\])
+     (DELAY
+        (ABSOLUTE
+          (PORT CK (::0.0))
+          (PORT D (::0.0))
+          (IOPATH CK Q (::314) (::359))
+        )
+     )
+     (TIMINGCHECK
+        (SETUPHOLD (negedge D) (posedge CK) (::76) (::28))
+        (SETUPHOLD (posedge D) (posedge CK) (::187) (::5))
+     )
+  )
+  (CELL
+     (CELLTYPE "DFFQX1")
+     (INSTANCE u_top.u_tx.g_simplex\.u_rep0.st_q_reg\[19\])
+     (DELAY
+        (ABSOLUTE
+          (PORT CK (::0.0))
+          (PORT D (::0.0))
+          (IOPATH CK Q (::337) (::378))
+        )
+     )
+     (TIMINGCHECK
+        (SETUPHOLD (negedge D) (posedge CK) (::81) (::50))
+        (SETUPHOLD (posedge D) (posedge CK) (::184) (::8))
+     )
+  )
+  (CELL
+     (CELLTYPE "DFFQX1")
+     (INSTANCE u_top.u_tx.g_simplex\.u_rep0.st_q_reg\[2\])
+     (DELAY
+        (ABSOLUTE
+          (PORT CK (::0.0))
+          (PORT D (::0.0))
+          (IOPATH CK Q (::263) (::315))
+        )
+     )
+     (TIMINGCHECK
+        (SETUPHOLD (negedge D) (posedge CK) (::81) (::50))
+        (SETUPHOLD (posedge D) (posedge CK) (::184) (::8))
+     )
+  )
+  (CELL
+     (CELLTYPE "DFFQX1")
+     (INSTANCE u_top.u_tx.g_simplex\.u_rep0.st_q_reg\[3\])
+     (DELAY
+        (ABSOLUTE
+          (PORT CK (::0.0))
+          (PORT D (::0.0))
+          (IOPATH CK Q (::274) (::325))
+        )
+     )
+     (TIMINGCHECK
+        (SETUPHOLD (negedge D) (posedge CK) (::81) (::50))
+        (SETUPHOLD (posedge D) (posedge CK) (::184) (::8))
+     )
+  )
+  (CELL
+     (CELLTYPE "DFFQX1")
+     (INSTANCE u_top.u_tx.g_simplex\.u_rep0.st_q_reg\[4\])
+     (DELAY
+        (ABSOLUTE
+          (PORT CK (::0.0))
+          (PORT D (::0.0))
+          (IOPATH CK Q (::256) (::309))
+        )
+     )
+     (TIMINGCHECK
+        (SETUPHOLD (negedge D) (posedge CK) (::81) (::50))
+        (SETUPHOLD (posedge D) (posedge CK) (::184) (::8))
+     )
+  )
+  (CELL
+     (CELLTYPE "DFFQX1")
+     (INSTANCE u_top.u_tx.g_simplex\.u_rep0.st_q_reg\[5\])
+     (DELAY
+        (ABSOLUTE
+          (PORT CK (::0.0))
+          (PORT D (::0.0))
+          (IOPATH CK Q (::256) (::309))
+        )
+     )
+     (TIMINGCHECK
+        (SETUPHOLD (negedge D) (posedge CK) (::81) (::50))
+        (SETUPHOLD (posedge D) (posedge CK) (::184) (::8))
+     )
+  )
+  (CELL
+     (CELLTYPE "DFFQX1")
+     (INSTANCE u_top.u_tx.g_simplex\.u_rep0.st_q_reg\[6\])
+     (DELAY
+        (ABSOLUTE
+          (PORT CK (::0.0))
+          (PORT D (::0.0))
+          (IOPATH CK Q (::256) (::309))
+        )
+     )
+     (TIMINGCHECK
+        (SETUPHOLD (negedge D) (posedge CK) (::81) (::50))
+        (SETUPHOLD (posedge D) (posedge CK) (::184) (::8))
+     )
+  )
+  (CELL
+     (CELLTYPE "DFFQX1")
+     (INSTANCE u_top.u_tx.g_simplex\.u_rep0.st_q_reg\[7\])
+     (DELAY
+        (ABSOLUTE
+          (PORT CK (::0.0))
+          (PORT D (::0.0))
+          (IOPATH CK Q (::256) (::309))
+        )
+     )
+     (TIMINGCHECK
+        (SETUPHOLD (negedge D) (posedge CK) (::81) (::50))
+        (SETUPHOLD (posedge D) (posedge CK) (::184) (::8))
+     )
+  )
+  (CELL
+     (CELLTYPE "DFFQX1")
+     (INSTANCE u_top.u_tx.g_simplex\.u_rep0.st_q_reg\[8\])
+     (DELAY
+        (ABSOLUTE
+          (PORT CK (::0.0))
+          (PORT D (::0.0))
+          (IOPATH CK Q (::256) (::309))
+        )
+     )
+     (TIMINGCHECK
+        (SETUPHOLD (negedge D) (posedge CK) (::81) (::50))
+        (SETUPHOLD (posedge D) (posedge CK) (::184) (::8))
+     )
+  )
+  (CELL
+     (CELLTYPE "DFFQX1")
+     (INSTANCE u_top.u_tx.g_simplex\.u_rep0.st_q_reg\[9\])
+     (DELAY
+        (ABSOLUTE
+          (PORT CK (::0.0))
+          (PORT D (::0.0))
+          (IOPATH CK Q (::256) (::309))
+        )
+     )
+     (TIMINGCHECK
+        (SETUPHOLD (negedge D) (posedge CK) (::81) (::51))
+        (SETUPHOLD (posedge D) (posedge CK) (::184) (::8))
+     )
+  )
+  (CELL
+     (CELLTYPE "NOR2BX1")
+     (INSTANCE u_top.u_tx.g_simplex\.u_rep0.g41__7098)
+     (DELAY
+        (ABSOLUTE
+          (PORT AN (::0.0))
+          (PORT B (::0.0))
+          (IOPATH B Y (::50) (::26))
+          (IOPATH AN Y (::129) (::106))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "NOR2BX1")
+     (INSTANCE u_top.u_tx.g_simplex\.u_rep0.g42__6131)
+     (DELAY
+        (ABSOLUTE
+          (PORT AN (::0.0))
+          (PORT B (::0.0))
+          (IOPATH B Y (::50) (::26))
+          (IOPATH AN Y (::132) (::101))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "NOR2BX1")
+     (INSTANCE u_top.u_tx.g_simplex\.u_rep0.g43__1881)
+     (DELAY
+        (ABSOLUTE
+          (PORT AN (::0.0))
+          (PORT B (::0.0))
+          (IOPATH B Y (::50) (::26))
+          (IOPATH AN Y (::132) (::102))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "NOR2BX1")
+     (INSTANCE u_top.u_tx.g_simplex\.u_rep0.g44__5115)
+     (DELAY
+        (ABSOLUTE
+          (PORT AN (::0.0))
+          (PORT B (::0.0))
+          (IOPATH B Y (::50) (::26))
+          (IOPATH AN Y (::117) (::101))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "NOR2BX1")
+     (INSTANCE u_top.u_tx.g_simplex\.u_rep0.g45__7482)
+     (DELAY
+        (ABSOLUTE
+          (PORT AN (::0.0))
+          (PORT B (::0.0))
+          (IOPATH B Y (::50) (::26))
+          (IOPATH AN Y (::120) (::98))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "NOR2BX1")
+     (INSTANCE u_top.u_tx.g_simplex\.u_rep0.g46__4733)
+     (DELAY
+        (ABSOLUTE
+          (PORT AN (::0.0))
+          (PORT B (::0.0))
+          (IOPATH B Y (::50) (::26))
+          (IOPATH AN Y (::120) (::98))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "NOR2BX1")
+     (INSTANCE u_top.u_tx.g_simplex\.u_rep0.g47__6161)
+     (DELAY
+        (ABSOLUTE
+          (PORT AN (::0.0))
+          (PORT B (::0.0))
+          (IOPATH B Y (::50) (::26))
+          (IOPATH AN Y (::120) (::98))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "NOR2BX1")
+     (INSTANCE u_top.u_tx.g_simplex\.u_rep0.g48__9315)
+     (DELAY
+        (ABSOLUTE
+          (PORT AN (::0.0))
+          (PORT B (::0.0))
+          (IOPATH B Y (::50) (::26))
+          (IOPATH AN Y (::120) (::98))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "NOR2BX1")
+     (INSTANCE u_top.u_tx.g_simplex\.u_rep0.g49__9945)
+     (DELAY
+        (ABSOLUTE
+          (PORT AN (::0.0))
+          (PORT B (::0.0))
+          (IOPATH B Y (::50) (::26))
+          (IOPATH AN Y (::133) (::107))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "OR2XL")
+     (INSTANCE u_top.u_tx.g_simplex\.u_rep0.g50__2883)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (IOPATH A Y (::79) (::115))
+          (IOPATH B Y (::97) (::131))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "NOR2BX1")
+     (INSTANCE u_top.u_tx.g_simplex\.u_rep0.g51__2346)
+     (DELAY
+        (ABSOLUTE
+          (PORT AN (::0.0))
+          (PORT B (::0.0))
+          (IOPATH B Y (::50) (::26))
+          (IOPATH AN Y (::130) (::130))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "NOR2BX1")
+     (INSTANCE u_top.u_tx.g_simplex\.u_rep0.g52__1666)
+     (DELAY
+        (ABSOLUTE
+          (PORT AN (::0.0))
+          (PORT B (::0.0))
+          (IOPATH B Y (::50) (::26))
+          (IOPATH AN Y (::109) (::95))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "NOR2BX1")
+     (INSTANCE u_top.u_tx.g_simplex\.u_rep0.g53__7410)
+     (DELAY
+        (ABSOLUTE
+          (PORT AN (::0.0))
+          (PORT B (::0.0))
+          (IOPATH B Y (::50) (::26))
+          (IOPATH AN Y (::116) (::102))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "NOR2BX1")
+     (INSTANCE u_top.u_tx.g_simplex\.u_rep0.g54__6417)
+     (DELAY
+        (ABSOLUTE
+          (PORT AN (::0.0))
+          (PORT B (::0.0))
+          (IOPATH B Y (::50) (::26))
+          (IOPATH AN Y (::116) (::102))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "NOR2BX1")
+     (INSTANCE u_top.u_tx.g_simplex\.u_rep0.g55__5477)
+     (DELAY
+        (ABSOLUTE
+          (PORT AN (::0.0))
+          (PORT B (::0.0))
+          (IOPATH B Y (::50) (::26))
+          (IOPATH AN Y (::116) (::102))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "NOR2BX1")
+     (INSTANCE u_top.u_tx.g_simplex\.u_rep0.g56__2398)
+     (DELAY
+        (ABSOLUTE
+          (PORT AN (::0.0))
+          (PORT B (::0.0))
+          (IOPATH B Y (::50) (::26))
+          (IOPATH AN Y (::116) (::102))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "NOR2BX1")
+     (INSTANCE u_top.u_tx.g_simplex\.u_rep0.g57__5107)
+     (DELAY
+        (ABSOLUTE
+          (PORT AN (::0.0))
+          (PORT B (::0.0))
+          (IOPATH B Y (::50) (::26))
+          (IOPATH AN Y (::116) (::102))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "NOR2BX1")
+     (INSTANCE u_top.u_tx.g_simplex\.u_rep0.g58__6260)
+     (DELAY
+        (ABSOLUTE
+          (PORT AN (::0.0))
+          (PORT B (::0.0))
+          (IOPATH B Y (::50) (::26))
+          (IOPATH AN Y (::116) (::102))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "NOR2BX1")
+     (INSTANCE u_top.u_tx.g_simplex\.u_rep0.g59__4319)
+     (DELAY
+        (ABSOLUTE
+          (PORT AN (::0.0))
+          (PORT B (::0.0))
+          (IOPATH B Y (::50) (::26))
+          (IOPATH AN Y (::116) (::102))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "NOR2BX1")
+     (INSTANCE u_top.u_tx.g_simplex\.u_rep0.g60__8428)
+     (DELAY
+        (ABSOLUTE
+          (PORT AN (::0.0))
+          (PORT B (::0.0))
+          (IOPATH B Y (::50) (::26))
+          (IOPATH AN Y (::113) (::97))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "OR3X1")
+     (INSTANCE u_top.u_tx.g16__5526)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (PORT C (::0.0))
+          (IOPATH A Y (::180) (::285))
+          (IOPATH B Y (::166) (::273))
+          (IOPATH C Y (::170) (::270))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "DFFQX1")
+     (INSTANCE u_top.idle_cnt_reg\[1\])
+     (DELAY
+        (ABSOLUTE
+          (PORT CK (::0.0))
+          (PORT D (::0.0))
+          (IOPATH CK Q (::270) (::321))
+        )
+     )
+     (TIMINGCHECK
+        (SETUPHOLD (negedge D) (posedge CK) (::122) (::42))
+        (SETUPHOLD (posedge D) (posedge CK) (::222) (::-33))
+     )
+  )
+  (CELL
+     (CELLTYPE "DFFQX1")
+     (INSTANCE u_top.idle_cnt_reg\[2\])
+     (DELAY
+        (ABSOLUTE
+          (PORT CK (::0.0))
+          (PORT D (::0.0))
+          (IOPATH CK Q (::274) (::325))
+        )
+     )
+     (TIMINGCHECK
+        (SETUPHOLD (negedge D) (posedge CK) (::139) (::48))
+        (SETUPHOLD (posedge D) (posedge CK) (::210) (::-20))
+     )
+  )
+  (CELL
+     (CELLTYPE "DFFQX1")
+     (INSTANCE u_top.idle_cnt_reg\[3\])
+     (DELAY
+        (ABSOLUTE
+          (PORT CK (::0.0))
+          (PORT D (::0.0))
+          (IOPATH CK Q (::291) (::340))
+        )
+     )
+     (TIMINGCHECK
+        (SETUPHOLD (negedge D) (posedge CK) (::139) (::48))
+        (SETUPHOLD (posedge D) (posedge CK) (::210) (::-20))
+     )
+  )
+  (CELL
+     (CELLTYPE "DFFQX1")
+     (INSTANCE u_top.idle_cnt_reg\[6\])
+     (DELAY
+        (ABSOLUTE
+          (PORT CK (::0.0))
+          (PORT D (::0.0))
+          (IOPATH CK Q (::292) (::340))
+        )
+     )
+     (TIMINGCHECK
+        (SETUPHOLD (negedge D) (posedge CK) (::139) (::48))
+        (SETUPHOLD (posedge D) (posedge CK) (::204) (::-14))
+     )
+  )
+  (CELL
+     (CELLTYPE "DFFQX1")
+     (INSTANCE u_top.idle_cnt_reg\[5\])
+     (DELAY
+        (ABSOLUTE
+          (PORT CK (::0.0))
+          (PORT D (::0.0))
+          (IOPATH CK Q (::293) (::341))
+        )
+     )
+     (TIMINGCHECK
+        (SETUPHOLD (negedge D) (posedge CK) (::139) (::48))
+        (SETUPHOLD (posedge D) (posedge CK) (::210) (::-20))
+     )
+  )
+  (CELL
+     (CELLTYPE "DFFQX1")
+     (INSTANCE u_top.idle_cnt_reg\[4\])
+     (DELAY
+        (ABSOLUTE
+          (PORT CK (::0.0))
+          (PORT D (::0.0))
+          (IOPATH CK Q (::285) (::335))
+        )
+     )
+     (TIMINGCHECK
+        (SETUPHOLD (negedge D) (posedge CK) (::139) (::48))
+        (SETUPHOLD (posedge D) (posedge CK) (::210) (::-20))
+     )
+  )
+  (CELL
+     (CELLTYPE "DFFQX1")
+     (INSTANCE u_top.idle_cnt_reg\[0\])
+     (DELAY
+        (ABSOLUTE
+          (PORT CK (::0.0))
+          (PORT D (::0.0))
+          (IOPATH CK Q (::269) (::320))
+        )
+     )
+     (TIMINGCHECK
+        (SETUPHOLD (negedge D) (posedge CK) (::139) (::48))
+        (SETUPHOLD (posedge D) (posedge CK) (::210) (::-20))
+     )
+  )
+  (CELL
+     (CELLTYPE "OAI21XL")
+     (INSTANCE u_top.g739__3680)
+     (DELAY
+        (ABSOLUTE
+          (PORT A0 (::0.0))
+          (PORT A1 (::0.0))
+          (PORT B0 (::0.0))
+          (IOPATH A0 Y (::124) (::99))
+          (IOPATH B0 Y (::76) (::90))
+          (IOPATH A1 Y (::95) (::75))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "OAI21XL")
+     (INSTANCE u_top.g740__1617)
+     (DELAY
+        (ABSOLUTE
+          (PORT A0 (::0.0))
+          (PORT A1 (::0.0))
+          (PORT B0 (::0.0))
+          (IOPATH A0 Y (::124) (::99))
+          (IOPATH B0 Y (::76) (::90))
+          (IOPATH A1 Y (::103) (::80))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "DFFQX1")
+     (INSTANCE u_top.idle_cnt_reg\[7\])
+     (DELAY
+        (ABSOLUTE
+          (PORT CK (::0.0))
+          (PORT D (::0.0))
+          (IOPATH CK Q (::271) (::322))
+        )
+     )
+     (TIMINGCHECK
+        (SETUPHOLD (negedge D) (posedge CK) (::133) (::49))
+        (SETUPHOLD (posedge D) (posedge CK) (::210) (::-21))
+     )
+  )
+  (CELL
+     (CELLTYPE "OAI21XL")
+     (INSTANCE u_top.g742__2802)
+     (DELAY
+        (ABSOLUTE
+          (PORT A0 (::0.0))
+          (PORT A1 (::0.0))
+          (PORT B0 (::0.0))
+          (IOPATH A0 Y (::124) (::99))
+          (IOPATH B0 Y (::76) (::90))
+          (IOPATH A1 Y (::102) (::80))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "OAI21XL")
+     (INSTANCE u_top.g743__1705)
+     (DELAY
+        (ABSOLUTE
+          (PORT A0 (::0.0))
+          (PORT A1 (::0.0))
+          (PORT B0 (::0.0))
+          (IOPATH A0 Y (::124) (::99))
+          (IOPATH B0 Y (::76) (::90))
+          (IOPATH A1 Y (::102) (::80))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "OAI21XL")
+     (INSTANCE u_top.g744__5122)
+     (DELAY
+        (ABSOLUTE
+          (PORT A0 (::0.0))
+          (PORT A1 (::0.0))
+          (PORT B0 (::0.0))
+          (IOPATH A0 Y (::124) (::99))
+          (IOPATH B0 Y (::76) (::90))
+          (IOPATH A1 Y (::97) (::75))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "OAI21XL")
+     (INSTANCE u_top.g745__8246)
+     (DELAY
+        (ABSOLUTE
+          (PORT A0 (::0.0))
+          (PORT A1 (::0.0))
+          (PORT B0 (::0.0))
+          (IOPATH A0 Y (::107) (::88))
+          (IOPATH B0 Y (::76) (::90))
+          (IOPATH A1 Y (::123) (::88))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "AOI21XL")
+     (INSTANCE u_top.g746__7098)
+     (DELAY
+        (ABSOLUTE
+          (PORT A0 (::0.0))
+          (PORT A1 (::0.0))
+          (PORT B0 (::0.0))
+          (IOPATH A0 Y (::95) (::78))
+          (IOPATH B0 Y (::116) (::58))
+          (IOPATH A1 Y (::96) (::77))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "OR3X1")
+     (INSTANCE u_top.g747__6131)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (PORT C (::0.0))
+          (IOPATH A Y (::170) (::290))
+          (IOPATH B Y (::193) (::305))
+          (IOPATH C Y (::160) (::268))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "AOI21XL")
+     (INSTANCE u_top.g748__1881)
+     (DELAY
+        (ABSOLUTE
+          (PORT A0 (::0.0))
+          (PORT A1 (::0.0))
+          (PORT B0 (::0.0))
+          (IOPATH A0 Y (::106) (::87))
+          (IOPATH B0 Y (::85) (::50))
+          (IOPATH A1 Y (::101) (::81))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "NAND2BX1")
+     (INSTANCE u_top.g749__5115)
+     (DELAY
+        (ABSOLUTE
+          (PORT AN (::0.0))
+          (PORT B (::0.0))
+          (IOPATH B Y (::62) (::77))
+          (IOPATH AN Y (::106) (::141))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "NOR2XL")
+     (INSTANCE u_top.g750__7482)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (IOPATH A Y (::90) (::54))
+          (IOPATH B Y (::88) (::45))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "AOI21XL")
+     (INSTANCE u_top.g751__4733)
+     (DELAY
+        (ABSOLUTE
+          (PORT A0 (::0.0))
+          (PORT A1 (::0.0))
+          (PORT B0 (::0.0))
+          (IOPATH A0 Y (::109) (::89))
+          (IOPATH B0 Y (::87) (::51))
+          (IOPATH A1 Y (::102) (::82))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "NAND2BX1")
+     (INSTANCE u_top.g752__6161)
+     (DELAY
+        (ABSOLUTE
+          (PORT AN (::0.0))
+          (PORT B (::0.0))
+          (IOPATH B Y (::74) (::94))
+          (IOPATH AN Y (::117) (::157))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "NOR2XL")
+     (INSTANCE u_top.g753__9315)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (IOPATH A Y (::90) (::54))
+          (IOPATH B Y (::88) (::45))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "AOI21XL")
+     (INSTANCE u_top.g754__9945)
+     (DELAY
+        (ABSOLUTE
+          (PORT A0 (::0.0))
+          (PORT A1 (::0.0))
+          (PORT B0 (::0.0))
+          (IOPATH A0 Y (::107) (::88))
+          (IOPATH B0 Y (::86) (::51))
+          (IOPATH A1 Y (::103) (::82))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "NAND2BX1")
+     (INSTANCE u_top.g755__2883)
+     (DELAY
+        (ABSOLUTE
+          (PORT AN (::0.0))
+          (PORT B (::0.0))
+          (IOPATH B Y (::71) (::92))
+          (IOPATH AN Y (::117) (::158))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "NOR2XL")
+     (INSTANCE u_top.g756__2346)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (IOPATH A Y (::88) (::53))
+          (IOPATH B Y (::88) (::45))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "DFFQX1")
+     (INSTANCE u_top.start_r_reg)
+     (DELAY
+        (ABSOLUTE
+          (PORT CK (::0.0))
+          (PORT D (::0.0))
+          (IOPATH CK Q (::486) (::502))
+        )
+     )
+     (TIMINGCHECK
+        (SETUPHOLD (negedge D) (posedge CK) (::75) (::15))
+        (SETUPHOLD (posedge D) (posedge CK) (::226) (::-38))
+     )
+  )
+  (CELL
+     (CELLTYPE "AOI21X1")
+     (INSTANCE u_top.g758__1666)
+     (DELAY
+        (ABSOLUTE
+          (PORT A0 (::0.0))
+          (PORT A1 (::0.0))
+          (PORT B0 (::0.0))
+          (IOPATH A0 Y (::90) (::76))
+          (IOPATH B0 Y (::70) (::44))
+          (IOPATH A1 Y (::86) (::72))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "NAND2BX1")
+     (INSTANCE u_top.g759__7410)
+     (DELAY
+        (ABSOLUTE
+          (PORT AN (::0.0))
+          (PORT B (::0.0))
+          (IOPATH B Y (::73) (::93))
+          (IOPATH AN Y (::120) (::162))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "NOR2XL")
+     (INSTANCE u_top.g760__6417)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (IOPATH A Y (::111) (::65))
+          (IOPATH B Y (::115) (::58))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "NOR4BX1")
+     (INSTANCE u_top.g762__2398)
+     (DELAY
+        (ABSOLUTE
+          (PORT AN (::0.0))
+          (PORT B (::0.0))
+          (PORT C (::0.0))
+          (PORT D (::0.0))
+          (IOPATH D Y (::124) (::46))
+          (IOPATH B Y (::186) (::75))
+          (IOPATH C Y (::134) (::61))
+          (IOPATH AN Y (::195) (::93))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "AOI21XL")
+     (INSTANCE u_top.g763__5107)
+     (DELAY
+        (ABSOLUTE
+          (PORT A0 (::0.0))
+          (PORT A1 (::0.0))
+          (PORT B0 (::0.0))
+          (IOPATH A0 Y (::104) (::86))
+          (IOPATH B0 Y (::86) (::52))
+          (IOPATH A1 Y (::113) (::89))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "NOR2XL")
+     (INSTANCE u_top.g764__6260)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (IOPATH A Y (::86) (::50))
+          (IOPATH B Y (::101) (::49))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "NAND2BX1")
+     (INSTANCE u_top.g765__4319)
+     (DELAY
+        (ABSOLUTE
+          (PORT AN (::0.0))
+          (PORT B (::0.0))
+          (IOPATH B Y (::74) (::99))
+          (IOPATH AN Y (::132) (::182))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "NOR4BX1")
+     (INSTANCE u_top.g766__8428)
+     (DELAY
+        (ABSOLUTE
+          (PORT AN (::0.0))
+          (PORT B (::0.0))
+          (PORT C (::0.0))
+          (PORT D (::0.0))
+          (IOPATH D Y (::136) (::53))
+          (IOPATH B Y (::174) (::56))
+          (IOPATH C Y (::161) (::58))
+          (IOPATH AN Y (::233) (::110))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "OR3X1")
+     (INSTANCE u_top.g768__5526)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (PORT C (::0.0))
+          (IOPATH A Y (::179) (::302))
+          (IOPATH B Y (::238) (::355))
+          (IOPATH C Y (::187) (::295))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "NOR2XL")
+     (INSTANCE u_top.g770__3680)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (IOPATH A Y (::91) (::55))
+          (IOPATH B Y (::86) (::49))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "NAND2XL")
+     (INSTANCE u_top.g771__1617)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (IOPATH A Y (::92) (::123))
+          (IOPATH B Y (::90) (::123))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "CLKINVX1")
+     (INSTANCE u_top.g772)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (IOPATH A Y (::52) (::44))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "NOR2BXL")
+     (INSTANCE u_top.g2)
+     (DELAY
+        (ABSOLUTE
+          (PORT AN (::0.0))
+          (PORT B (::0.0))
+          (IOPATH B Y (::70) (::34))
+          (IOPATH AN Y (::136) (::109))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "OAI21X1")
+     (INSTANCE u_top.g774)
+     (DELAY
+        (ABSOLUTE
+          (PORT A0 (::0.0))
+          (PORT A1 (::0.0))
+          (PORT B0 (::0.0))
+          (IOPATH A0 Y (::84) (::71))
+          (IOPATH B0 Y (::62) (::77))
+          (IOPATH A1 Y (::101) (::72))
+        )
+     )
+  )
+  (CELL
+     (CELLTYPE "XNOR2XL")
+     (INSTANCE u_top.g3)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.0))
+          (PORT B (::0.0))
+          (IOPATH A Y (::207) (::201))
+          (IOPATH B Y (::194) (::145))
+        )
+     )
+  )
+)

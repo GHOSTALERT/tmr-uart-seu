@@ -45,7 +45,7 @@ Full write-up: [`docs/TMR_UART_Report.pdf`](docs/TMR_UART_Report.pdf) (IEEE form
 | Critical path (ns) | 2.006 | 2.110 | 2.304 |
 | Flip-flops | 37 | 77 | 77 |
 
-Sign-off of MODE 2:
+Sign-off of MODE 2 (raw tool reports and logs for every number here are in [`results/`](results/)):
 
 - **Equivalence:** Conformal LEC, 91 / 91 compare points equivalent (14 outputs, 77 flip-flops).
 - **Gate-level simulation:** 10 / 10 frames correct with the gsclib090 cell models.
@@ -67,6 +67,7 @@ Known limitation: Genus merged the three identical feedback voters into one, so 
 | `syn/` | `genus_tmr.tcl` (Genus synthesis), `lec_m0/m1/m2.do` (Conformal LEC) |
 | `sta/` | `tempus_tmr.tcl` (Tempus STA, pre- or post-layout) |
 | `pnr/` | Innovus scripts as run in the lab: `mmmc.tcl`, `init.tcl`, `step2.tcl`, `cts_cells.tcl`, `step3.tcl`; `innovus_tmr.tcl` is the same flow in one file |
+| `results/` | Tool outputs from the lab run: Genus reports, netlists and SDF for all three modes, the Conformal LEC log, the Xcelium fault-injection log, Innovus timing, area, power and DRC reports with the post-route netlist, and the Spectre voter netlist ([index](results/README.md)) |
 | `docs/` | HOW_TO_RUN.md, report (PDF, DOCX), figures, cropped tool screenshots, and the scripts that generate the figures and report |
 
 ## Running it

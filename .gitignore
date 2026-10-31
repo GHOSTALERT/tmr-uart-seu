@@ -23,3 +23,6 @@ pnr/out/
 *.lib
 *.lef
 out/
+
+# committed tool outputs from the lab server run (2026-10-27..29)
+!results/**

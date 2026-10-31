@@ -1,0 +1,62 @@
+// Generated for: spectre
+// Generated on: Oct 29 13:34:20 2026
+// Design library name: tmr_uart
+// Design cell name: maj3_cmos
+// Design view name: schematic
+simulator lang=spectre
+global 0 vdd!
+include "/home/cadence/install_RB_8.7/FOUNDRY/GPDK/gpdk090_v4.6/libs.oa22/gpdk090/../../models/spectre/gpdk090.scs" section=NN
+
+// Library name: tmr_uart
+// Cell name: maj3_cmos
+// View name: schematic
+NM18 (net2 C 0 net2) gpdk090_nmos1v w=(240n) l=100n as=67.2f ad=67.2f \
+        ps=1.04u pd=1.04u m=(1)*(1) simM=(1)*(1)
+NM17 (net6 C 0 net6) gpdk090_nmos1v w=(240n) l=100n as=67.2f ad=67.2f \
+        ps=1.04u pd=1.04u m=(1)*(1) simM=(1)*(1)
+NM16 (net8 B 0 net8) gpdk090_nmos1v w=(240n) l=100n as=67.2f ad=67.2f \
+        ps=1.04u pd=1.04u m=(1)*(1) simM=(1)*(1)
+NM15 (net3 A net8 net3) gpdk090_nmos1v w=(240n) l=100n as=67.2f ad=67.2f \
+        ps=1.04u pd=1.04u m=(1)*(1) simM=(1)*(1)
+NM14 (net3 B net6 net3) gpdk090_nmos1v w=(240n) l=100n as=67.2f ad=67.2f \
+        ps=1.04u pd=1.04u m=(1)*(1) simM=(1)*(1)
+NM13 (net3 A net2 net3) gpdk090_nmos1v w=(240n) l=100n as=67.2f ad=67.2f \
+        ps=1.04u pd=1.04u m=(1)*(1) simM=(1)*(1)
+NM6 (Y net3 0 0) gpdk090_nmos1v w=(240n) l=100n as=67.2f ad=67.2f ps=1.04u \
+        pd=1.04u m=(1)*(1) simM=(1)*(1)
+PM11 (net7 C net3 net7) gpdk090_pmos1v w=(720n) l=100n as=201.6f ad=201.6f \
+        ps=2u pd=2u m=(1)*(1) simM=(1)*(1)
+PM10 (net1 C net7 net1) gpdk090_pmos1v w=(720n) l=100n as=201.6f ad=201.6f \
+        ps=2u pd=2u m=(1)*(1) simM=(1)*(1)
+PM9 (vdd! B net1 vdd!) gpdk090_pmos1v w=(720n) l=100n as=201.6f ad=201.6f \
+        ps=2u pd=2u m=(1)*(1) simM=(1)*(1)
+PM8 (net1 A vdd! vdd!) gpdk090_pmos1v w=(720n) l=100n as=201.6f ad=201.6f \
+        ps=2u pd=2u m=(1)*(1) simM=(1)*(1)
+PM7 (net7 B net1 net1) gpdk090_pmos1v w=(720n) l=100n as=201.6f ad=201.6f \
+        ps=2u pd=2u m=(1)*(1) simM=(1)*(1)
+PM6 (Y net3 vdd! vdd!) gpdk090_pmos1v w=(480n) l=100n as=134.4f ad=134.4f \
+        ps=1.52u pd=1.52u m=(1)*(1) simM=(1)*(1)
+PM0 (net3 A net7 net7) gpdk090_pmos1v w=(720n) l=100n as=201.6f ad=201.6f \
+        ps=2u pd=2u m=(1)*(1) simM=(1)*(1)
+V5 (C 0) vsource type=pulse val0=0 val1=1 period=10n delay=0 rise=20p \
+        fall=20p width=4.98n
+V4 (B 0) vsource type=pulse val0=0 val1=1 period=20n delay=0 rise=20p \
+        fall=20p width=9.98n
+V0 (A 0) vsource type=pulse val0=0 val1=1 period=40n delay=0 rise=20p \
+        fall=20p width=19.98n
+V3 (vdd! 0) vsource dc=1 type=dc
+C0 (Y 0) capacitor c=10f
+simulatorOptions options psfversion="1.4.0" reltol=1e-3 vabstol=1e-6 \
+    iabstol=1e-12 temp=27 tnom=27 scalem=1.0 scale=1.0 gmin=1e-12 rforce=1 \
+    maxnotes=5 maxwarns=5 digits=5 cols=80 pivrel=1e-3 \
+    sensfile="../psf/sens.output" checklimitdest=psf 
+tran tran stop=80n errpreset=moderate write="spectre.ic" \
+    writefinal="spectre.fc" annotate=status maxiters=5 
+finalTimeOP info what=oppoint where=rawfile
+modelParameter info what=models where=rawfile
+element info what=inst where=rawfile
+outputParameter info what=output where=rawfile
+designParamVals info what=parameters where=rawfile
+primitives info what=primitives where=rawfile
+subckts info what=subckts where=rawfile
+saveOptions options save=allpub

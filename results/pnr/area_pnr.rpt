@@ -1,0 +1,14 @@
+    Hinst Name                     Module Name                                       Inst Count           Total Area
+-----------------------------------------------------------------------------------------------------------------
+uart_tmr_m2                                                                                 593             3826.886
+ u_top                             uart_tmr_top_MODE2_CPB16_PARITY_EN1_GAP8_FI_PORT0        592             3822.345
+  u_top/u_tpg                      lfsr_N8_TAPS184_SEED1_DEBRUIJN1                           32              245.993
+  u_top/u_tx                       tmr_uart_tx_MODE2_CPB16_PARITY_EN1_CW4_SW20              516             3252.399
+   u_top/u_tx/g_tmr.g_fb_vote.u_v0 maj3_W20                                                  40              203.606
+   u_top/u_tx/g_tmr.u_rep0         tx_replica_CPB16_PARITY_EN1_CW4_SW20                     127              799.286
+    u_top/u_tx/g_tmr.u_rep0/u_core uart_tx_core_CPB16_PARITY_EN1_CW4_SW20                    87              390.560
+   u_top/u_tx/g_tmr.u_rep1         tx_replica_CPB16_PARITY_EN1_CW4_SW20_20                  127              799.286
+    u_top/u_tx/g_tmr.u_rep1/u_core uart_tx_core_CPB16_PARITY_EN1_CW4_SW20_22                 87              390.560
+   u_top/u_tx/g_tmr.u_rep2         tx_replica_CPB16_PARITY_EN1_CW4_SW20_19                  128              801.557
+    u_top/u_tx/g_tmr.u_rep2/u_core uart_tx_core_CPB16_PARITY_EN1_CW4_SW20_21                 88              392.831
+   u_top/u_tx/g_tmr.u_vout         maj3_W2                                                    4               19.679
