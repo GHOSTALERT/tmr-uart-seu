@@ -1,5 +1,17 @@
 # SEU-Tolerant UART Transmitter with Voted-Feedback TMR (GPDK090)
 
+**What happens when a cosmic ray flips a bit in your UART? With voted-feedback TMR, nothing: 5 of 5 frames survive the same upsets that corrupt 3 of 5 in an unprotected design.**
+
+![Verilog](https://img.shields.io/badge/RTL-Verilog-0b7285)
+![Cadence](https://img.shields.io/badge/flow-Xcelium%20%C2%B7%20Genus%20%C2%B7%20Conformal%20%C2%B7%20Innovus-b91c1c)
+![Node](https://img.shields.io/badge/node-GPDK090%2090%20nm-555)
+![LEC](https://img.shields.io/badge/LEC-91%20%2F%2091%20equivalent-2e7d32)
+![Course](https://img.shields.io/badge/VIT-BECE303L%20VLSI%20System%20Design-1e3a8a)
+
+<p align="center">
+  <img src="docs/figures/fig_fi_outcome.png" alt="Frames received correctly under the same SEU schedule" width="640">
+</p>
+
 A UART transmitter protected against single-event upsets (SEUs) with triple modular redundancy, taken from RTL to a routed layout in the Cadence GPDK090 (90 nm) kit.
 
 One Verilog description produces three versions through a `MODE` parameter:
@@ -55,37 +67,11 @@ Known limitation: Genus merged the three identical feedback voters into one, so 
 | `syn/` | `genus_tmr.tcl` (Genus synthesis), `lec_m0/m1/m2.do` (Conformal LEC) |
 | `sta/` | `tempus_tmr.tcl` (Tempus STA, pre- or post-layout) |
 | `pnr/` | Innovus scripts as run in the lab: `mmmc.tcl`, `init.tcl`, `step2.tcl`, `cts_cells.tcl`, `step3.tcl`; `innovus_tmr.tcl` is the same flow in one file |
-| `docs/` | Report (PDF, DOCX), figures, cropped tool screenshots, and the scripts that generate the figures and report |
+| `docs/` | HOW_TO_RUN.md, report (PDF, DOCX), figures, cropped tool screenshots, and the scripts that generate the figures and report |
 
-## How to run
+## Running it
 
-The PDK files (`slow.lib`, `typical.lib`, LEFs, cell Verilog models) are not included; copy `slow.lib` and `typical.lib` from your gsclib090 install into `syn/`.
-
-```sh
-# RTL directed tests for all three modes (Icarus Verilog)
-./run_sim.sh
-
-# Fault-injection comparison (Xcelium), from syn/
-xrun -64bit -access +rwc -top tb_fi -defparam tb_fi.MODE=2 ../tb/tb_fi.v ../rtl/*.v
-
-# Synthesis, from syn/ (MODE 0, 1 or 2)
-genus            # then:  set MODE 2 ; source genus_tmr.tcl
-lec -XL -nogui -dofile lec_m2.do
-
-# Gate-level simulation, from syn/
-xrun -64bit -access +rwc -timescale 1ns/1ps ../tb/tb_gl.v Netlist/uart_tmr_m2_netlist.v \
-     -v /home/cadence/install/FOUNDRY/digital/90nm/dig/vlog/gsclib090.v
-
-# Place and route, from pnr/
-innovus          # then:  source init.tcl ; source step2.tcl ; source cts_cells.tcl ; source step3.tcl
-```
-
-## Lab notes
-
-- In Innovus, `gsclib090_translated.lef` must be read before `gsclib090_tech.lef`; the translated LEF defines the metal layers.
-- Clock-tree synthesis found no buffers until the gsclib090 `CLKBUF*` / `CLKINV*` cells were named explicitly (`pnr/cts_cells.tcl`).
-- Conformal LEC 21.10 runs dofiles in classic syntax (`read library`, not `read_library`).
-- Virtuoso Verilog In could not launch the Xcelium parser on the lab server, so the circuit is shown through SimVision, the Innovus layout and a hand-drawn transistor-level voter.
+RTL tests (Icarus Verilog), fault injection, synthesis, LEC, gate-level simulation and place-and-route, plus lab notes on the Cadence tools: see **[docs/HOW_TO_RUN.md](docs/HOW_TO_RUN.md)**.
 
 ## References
 
